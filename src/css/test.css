@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box; /* pour maîtriser width et flex-basis */
+}
+
+html {
+  display: flex; flex-direction: column; /* correction bug IE de min-height non appliqué à body */
+}
+
+body {
+  display: flex; /* crée un contexte flex pour ses enfants */
+  flex-direction: column; /* affichage vertical */
+  min-height: 100vh; /* toute la hauteur du viewport */
+  padding: 1em;
+}
+
+.wrapper {
+  flex: 1 1 auto; /* occupe la hauteur restante */
+  display: flex; /* crée un contexte flex pour ses enfants */
+}
+
+nav,
+aside {
+  width: 10em;
+}
+
+article {
+  flex: 1; /* occupe la largeur restante */
+}
+
+nav {
+  order: -1; /* nav s'affiche en premier */
+}
+
+
+/* Responsive (fenêtres de moins de 640px) */
+
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column; /* affichage vertical */
+  }
+  nav,
+  aside {
+    width: auto; /* pour écraser la valeur 10em */
+  }
+  nav,
+  aside,
+  article {
+    flex-basis: auto; /* pour écraser la valeur 0, due au flex: 1 */
+  }
+  nav {
+    order: 0; /* nav reprend sa place */
+  }
+}
+
+/* Decoration */
+
+body {
+  margin: 0;
+  background: #999;
+  font-family: arial, sans-serif;
+}
+header,
+nav,
+aside,
+article,
+footer {
+  margin: .4em;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+nav {
+	padding: 0; margin: 0;
+}
+#nav li {
+	display: flex;
+	list-style: none; /* nécessaire pour IE7 */
+	background-color: orange;
+	border-style: ridge;
+}
+
+#containerHeader
+{
+	display: flex;
+	border-style: solid;
+	border-color: white;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#elem1Header
+{
+	background-image: url("../img/beer-liquid.jpg");
+	background-size: 150%; 
+	border-bottom-left-radius: 17px;
+	border-top-left-radius: 17px;
+	
+}
+#elem2Header
+{
+	width: 100%;
+	color:black;
+	border-style:groove;
+	border-width: 10px;
+	display: flex;	
+	justify-content: center; 
+	align-items: center;
+	background-image: url("../img/wood-1161206_640.jpg");
+	
+}
+#menuVertical
+{
+	list-style: none; /* nécessaire pour IE7 */
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
+	background-color: grey;
+	background-size: 100%;
+	font-size: 25px;
+	position: static;
+	
+}
+nav {
+  background: #ccccff;
+}
+aside {
+  background: #ccccff;
+}
+article {
+  background: #dddd88;
+}
+footer {
+  background: #ffeebb;
+}

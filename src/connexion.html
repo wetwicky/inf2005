@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Le Site des supers vilains</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/connexion.css">
+	</head>
+	<body>
+		<section>
+		<form method="post">
+			<fieldset>
+				<legend>
+					Votre Produit
+				</legend>
+				<p>
+					<label for="Nom">Nom:</label>
+					<input type="text" name="Nom" id="Nom" placeholder="ex:John Smith" autofocus required/>
+				</p>
+				<p>
+
+					<label for="Description">Description:</label>
+					<textarea rows="5" cols="50"  name="Description" id="Description" placeholder="La description du produit à enregistrer"></textarea>
+				</p>
+				<p>
+					<label for="Produit">Produit: </label>
+					<input type="file" name="Produit" id="Produit" required />
+				</p>
+				<input type="submit" value="Envoyer" />
+			</fieldset>
+		</form>
+		<hr />
+		<form method="post">
+			<fieldset>
+				<legend>
+					Enregistrer Un employé
+				</legend>
+				<p>
+					<label for="NomEmploye">Nom:</label>
+					<input type="text" name="NomEmploye" id="NomEmploye" placeholder="ex: Boucher" required/>
+				</p>
+				<p>
+					<label for="PrenomEmploye">Prenom:</label>
+					<input type="text" name="PrenomEmploye" id="PrenomEmploye" placeholder="ex: Bobby" required/>
+				</p>
+				<p>
+					<label for="CourrielEmploye">Courriel</label>
+					<input type="email" name="CourrielEmploye" id="CourrielEmploye" placeholder="example@courrier.uqam.ca" required/>
+				</p>
+				<p>
+					<label for="FonctionEmploye">Fonction:</label>
+					<input type="text" name="FonctionEmploye" id="FonctionEmploye" placeholder="Stagiaire"/>
+				</p>
+				<p>
+					<label for="PhotoEmploye">Photo</label>
+					<input type="file" name="PhotoEmploye" id="PhotoEmploye" />
+				</p>
+				<input type="submit" value="Enregistrer"  />
+			</fieldset>
+		</form>
+		</section>
+	</body>
+</html>
