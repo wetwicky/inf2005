@@ -117,25 +117,24 @@ font
 }
 #containerBody p
 {
-	display:
+	display: flex
+	
 	width: 100%
 }
 
-#nav {
+#nav 
+{
 	padding: 0; margin: auto;
 	display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
 	-webkit-flex-direction:row;
 	
 }
 #nav li {
-	
 	list-style: none; /* nécessaire pour IE7 */
 	background-color: orange;
 	border-style: ridge;
@@ -189,21 +188,26 @@ font
 	-webkit-display:flex;
 	-moz-display:flex;
 	display:flex;
+	flex-direction:column;
 }
+.mainInformation
+{
+	-webkit-display:flex;
+	-moz-display:flex;
+	display:flex;
 
+}
 #menuVertical
 {
-	float:left;
 	list-style: none; /* nécessaire pour IE7 */
 	border-style: double;
 	border-color: white;
 	border-width: 10px;
 	background-color: grey;
-	background-size: 100%;
 	font-size: 20px;
 	position: static;
 	text-align: center;
-	height: auto;
+	max-height: 525px ;
 }
 
 #menuVertical hr
@@ -221,8 +225,24 @@ a:hover
 	display: inline-block;
 	width: 100%;
 	height:100%;
-	margin-left: 5px;
 	clear: left
+}
+.imageProduit
+{
+	float: right;
+	width: 50%;
+}
+
+.informationDisposition
+{
+}
+.sectionTarget
+{
+	position: inline;
+}
+#piedDePage
+{
+	
 }
 
 #vin
@@ -395,9 +415,49 @@ nav {
 {
 	min-width: 283px;
 }
+
+#containerBody
+{
+	-webkit-display:flex;
+	-moz-display:flex;
+	display:flex;
+	flex-direction: column;
+	
+}
+
 #menuVertical
 {
+	position:static;
 	min-width: 320px;
+}
+#iframe
+{
+	margin-left: 0px;
+}
+
+.mainInformation
+{
+	-webkit-display:flex;
+	-moz-display:flex;
+	display:flex;
+	flex-direction: column;
+}
+
+footer
+{
+	margin:0px;
+}
+
+
+.produit
+{
+	margin-left: 0px;
+}
+.sectionTarget
+{
+	display: flex;
+	margin-left: 0px;
+	flex-direction: column;
 }
 
 }
