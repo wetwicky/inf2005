@@ -3,16 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Beer Inside</title>
+		<title>La societe secrete des alcools</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="biere, vin, spiritueux, champagne" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Place favicon.ico in the root directory -->
 
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body class="withbackground">
 		<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -21,21 +20,21 @@
 		<header>
 			<div id="containerHeader" class= "wrapper">
 				<div id="elem1Header" class="elemHeader">
-					<a href="index.html"><img src="img/beer-549300_640.png" alt="Le logo de l'entreprise" height="150px" /></a>
+					<a href="index.html"><img id="logo" src="img/logo.png" alt="Le logo de l'entreprise"  /></a>
 				</div>
 				<div id="elem2Header" class="elemHeader" >
 					<ul id="nav">
 						<li>
-							<a target="idFrame" href="directeur.html">Directeur</a>
+							<a target="idFrame" href="directeur.html"><div>Directeur</div></a>
 						</li>
 						<li>
-							<a href="contact.html">Contact</a>
+							<a href="contact.html"><div>Contact</div></a>
 						</li>
 						<li>
-							<a href="bottin.html">Bottin</a>
+							<a href="bottin.html"><div>Bottin</div></a>
 						</li>
 						<li>
-							<a href="connexion.html">Connexion</a>
+							<a href="connexion.html"><div>Connexion</div></a>
 						</li>
 					</ul>
 				</div>
@@ -44,48 +43,53 @@
 		<hr />
 		<div id="containerBody" class="wrapper">
 			<div class="mainInformation">
-				<nav id= "menuVertical">
-					<li>
-						<a target="idFrame" href="phare1.html">1er produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare2.html">2e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare3.html">3e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare4.html">4e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare5.html">5e produit phare</a>
-					</li>
-					<hr />
-					<li>
-						<a href="ale.html">Ale</a>
-					</li>
-					<li>
-						<a href="lager.html">Lager</a>
-					</li>
-					<li>
-						<a href="vin.html">Vin</a>
-					</li>
-					<li>
-						<a href="champagne.html">Champagne</a>
-					</li>
-					<li>
-						<a href="spiritueux.html">Spiritueux</a>
-					</li>
+				<nav id= "menuVerticalIndex">
+					<ul>
+						<li>
+							
+							<a target="idFrame" href="phare1.html"><div>1er produit phare</div></a>
+						</li>
+						<li>
+							<a target="idFrame" href="phare2.html"><div>2e produit phare</div></a>
+						</li>
+						<li>
+							<a target="idFrame" href="phare3.html"><div>3e produit phare</div></a>
+						</li>
+						<li>
+							<a target="idFrame" href="phare4.html"><div>4e produit phare</div></a>
+						</li>
+						<li>
+							<a target="idFrame" href="phare5.html"><div>5e produit phare</div></a>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="ale.html"><div>Ale</div></a>
+						</li>
+						<li>
+							<a href="lager.html"><div>Lager</div></a>
+						</li>
+						<li>
+							<a href="vin.html"><div>Vin</div></a>
+						</li>
+						<li>
+							<a href="champagne.html"><div>Champagne</div></a>
+						</li>
+						<li>
+							<a href="spiritueux.html"><div>Spiritueux</div></a>
+						</li>
+					</ul>
 				</nav>
 
-				<IFRAME id = "iframe" src="img/produit phare.jpg" name="idFrame" id="idFrame"frameborder="yes" width="100%" height="400">
+				<IFRAME id = "iframe" src="phare1.html" name="idFrame">
 					<p>
 						Your browser does not support iframes.
 					</p>
 				</IFRAME>
 			</div>
 		</div>
-		<footer id="piedDePage">
+		<footer id="piedDePage" class="clearfix">
 			<p>
 				developpé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigleINF2005/">INF2005</a> de l'<a href="http://www.uqam.ca/">UQAM</a>
 			</p>
@@ -94,7 +98,12 @@
 				<br />
 				<a href="mailto:example@xyz.org">Courriel pour me contacter</a>
 			</p>
-			
+			<p id="cssValidator">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer"> <img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="CSS Valide !" /> </a>
+			</p>
+
 		</footer>
 	</body>
 </html>

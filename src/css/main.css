@@ -14,18 +14,6 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
 /*
  * A better looking default horizontal rule
@@ -91,11 +79,20 @@ textarea {
 
 /* Decoration */
 
-body {
+body
+{
   margin: 0;
-  background: #999;
   font-family: arial, sans-serif;
+  text-align: justify;
+  background-color: #191919;
+  color: white;
 }
+
+.withbackground
+{
+	background-image: url(../img/fond.jpg);
+}
+
 header,
 nav,
 aside,
@@ -105,11 +102,6 @@ footer {
   padding: 1em;
   border-radius: 6px;
 }
-body
-{
-	background-color: #191919;
-	color: white;
-}
 
 font
 {
@@ -117,13 +109,12 @@ font
 }
 #containerBody p
 {
-	display: flex
-	
-	width: 100%
+	display: flex;
 }
 
 #nav 
 {
+	
 	padding: 0; margin: auto;
 	display: -webkit-box;
 	display: -moz-box;
@@ -132,15 +123,44 @@ font
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	-webkit-flex-direction:row;
-	
+	width:100%;
+	height: 100%;
 }
 #nav li {
+	display:block;
 	list-style: none; /* nécessaire pour IE7 */
-	background-color: orange;
-	border-style: ridge;
+	background-color: #e5b41c;
 	margin: auto;
-	-webkit-justify-content: space-between;
+	box-sizing: border-box;
+	border-radius: 40px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	line-height: 15px;
+	text-transform: uppercase;
+	border: 1px solid #a27f13;
+	box-shadow: none;
+	text-decoration: none;
+	text-align: center;
+	
 }
+#nav li a
+{
+	display: block;
+	line-height: 60px;
+	width: 118px;
+	text-align: center;
+}
+	
+input:focus
+{
+	background-color: #77FF88;
+}
+
+input.submitable:active
+{
+	background-color: #999999;
+}
+
 #containerHeader
 {
 	display: flex;
@@ -158,6 +178,13 @@ font
 	border-top-left-radius: 17px;
 	
 }
+
+#logo
+{
+	height: 150px;
+	width: 150px;
+}
+
 #elem2Header
 {
 	width: 100%;
@@ -169,20 +196,15 @@ font
 	-moz-justify-content: center; 
 	-webkit-align-items: center;
 	-moz-align-items: center;
-	background-image: url("../img/wood-1161206_640.jpg");
+	background: red; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, rgba(81,40,0,0.3), rgba(255,146,36,0.8)); /*Safari 5.1-6*/
+  	background: -o-linear-gradient(to right, rgba(81,40,0,0.3), rgba(255,146,36,0.8)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(to right, rgba(81,40,0,0.3), rgba(255,146,36,0.8)); /*Fx 3.6-15*/
+  	background: linear-gradient(to right, rgba(81,40,0,0.8), rgba(255,146,36,0.8)); /*Standard*/
+	background-size: 100%;
 	
 }
 
-#elem2Header li
-{
-	-webkit-display: flex;
-	-webkit-flex-wrap: nowrap;
-	-moz-flex-wrap: nowrap;
-	wrap: nowrap;
-	-webkit-text-justify:kashida;
-	-moz-text-justify:kashida;
-	font: black;
-}
 #containerBody
 {
 	-webkit-display:flex;
@@ -197,8 +219,41 @@ font
 	display:flex;
 
 }
+.informationDisposition
+{
+	width:100%;
+}
+
 #menuVertical
 {
+	padding:0;
+	padding-top:18px;
+	list-style: none; /* nécessaire pour IE7 */
+	border-style: double;
+	border-color: white;
+	border-width: 10px;
+	background-color: grey;
+	font-size: 20px;
+	position: static;
+	text-align: center;
+	height: 200px ;
+}
+
+#menuVertical ul
+{
+	padding:0;
+	margin:auto;
+	list-style: none; /* nécessaire pour IE7 */
+	font-size: 20px;
+	position: static;
+	text-align: center;
+	max-height: 200px ;
+}
+
+#menuVerticalIndex ul
+{
+	padding:0;
+	margin:auto;
 	list-style: none; /* nécessaire pour IE7 */
 	border-style: double;
 	border-color: white;
@@ -219,9 +274,16 @@ a:hover
 {
 	color:green;
 }
+figcaption
+{
+	font-size: 2em;
+	margin: auto;
+	text-align: center;
+}
 
 #iframe
 {
+	background-color: #191919;
 	display: inline-block;
 	width: 100%;
 	height:100%;
@@ -233,31 +295,130 @@ a:hover
 	width: 50%;
 }
 
-.informationDisposition
-{
-}
 .sectionTarget
 {
-	position: inline;
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+    justify-content: center;
+	margin: auto;
 }
-#piedDePage
+
+.sectionTarget a
 {
-	
+	border-style: solid;
+	border-width: 5px;
+	background-color: orange;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	margin-top: 2px;
 }
 
-#vin
+#descriptionDirecteur
 {
-	background-image: url("img/bordeaux.png"); 
+	font-size: large
+}
+
+.underImage
+{
+	clear:both
+}
+
+.produit
+{
+	clear:both;
+}
+
+.figureAGauche .produitAvecEtiquette
+{
+	float:left;
+	margin:5px;
+}
+
+.figureADroite .produitAvecEtiquette
+{
+	float: right;
+	margin:5px;
+}
+
+figure p
+{
+	padding-top: 55px;
+}
+
+.coinArrondie img
+{
+	border-radius: 20px;
+}
+
+/* ==========================================================================
+   Image size presentation
+   ========================================================================== */
+#img-verreAle, #beerLager
+{
+	width: 500px;
+}
+
+#beerLager, #spiritueux, #champagne
+{
+	width: 400px;
+}
+
+#vintageAle, #paleAle, #bordeaux, #unnamed, #harpLager
+{
+	width: 300px;
+}
+
+#hediard, #yuengling, #stella, #cornish, #corona, #LeavenWorth, #Michelob, #Viru,
+#brooklyn, #budweiser, #hamstel, #landshark, #miller, #peroni
+{
+	width: 200px;
+}
+
+#aleWinter, #americanAle, #vinJadis, #shiraz, #deutz, #tennet
+{
+	width: 150px;
+}
+
+#Dehu, #vinBuzet, #bonnet
+{
+	width: 100px;
 }
 
 
 
+#tableEmploye
+{
 
+	 border-width:5px; 
+	 border-style:solid; 
+	 border-color:white;
+	 padding: 5px;
+	 margin: auto;
+	 background-color: black;
+	 border-collapse: collapse;
 
+}
 
-
-
-
+#tableEmploye tr{ 
+	 border-width:2px;
+	 border-style:solid; 
+	 border-color:white;
+ }
+ #piedDePage
+ {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-wrap:wrap;
+ 	
+ }
+ 
+ #cssValidator
+ {
+ 	
+ }
+ 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -277,7 +438,7 @@ a:hover
 
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -353,7 +514,7 @@ body {
 }
 
 .wrapper {
-  flex: 1 1 auto; /* occupe la hauteur restante */
+  flex: auto; /* occupe la hauteur restante */
   display: flex; /* crée un contexte flex pour ses enfants */
 }
 
@@ -374,19 +535,19 @@ nav {
 /* Responsive (fenêtres de moins de 640px) */
 
 @media (max-width: 640px) {
-  .wrapper {
+  .wrapper
+  {
     flex-direction: column; /* affichage vertical */
   }
-  nav,
-  aside {
+  nav, aside
+  {
     width: auto; /* pour écraser la valeur 10em */
   }
-  nav,
-  aside,
-  article {
-    flex-basis: auto; /* pour écraser la valeur 0, due au flex: 1 */
-  }
-  nav {
+  
+
+  
+  nav
+  {
     -webkit-order: 0; /* nav reprend sa place */
     -moz-order:0;
   }
@@ -394,12 +555,13 @@ nav {
   #containerHeader
 {
 	display: flex;
+	flex-wrap:wrap;
 	border-style: solid;
 	border-color: white;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius:0px; 
-	min-width: 315px;
+	min-width: 200px;
 }
 
 #elem1Header
@@ -407,13 +569,19 @@ nav {
 	margin: auto;
 	min-width: 165px;
 }
+
+
 #elem2Header
 {
-	min-width: 283px;
+	width: 100%;
+	box-sizing: border-box;
 }
+
 #nav
 {
-	min-width: 283px;
+	display:flex;
+	flex-wrap:wrap;
+	width: 100%;
 }
 
 #containerBody
@@ -425,11 +593,21 @@ nav {
 	
 }
 
+#containerBody p
+{
+	content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
+    margin:5px;
+}
+
 #menuVertical
 {
 	position:static;
-	min-width: 320px;
+	padding-top:18px;
+	padding-bottom: 18px;
 }
+
 #iframe
 {
 	margin-left: 0px;
@@ -448,19 +626,55 @@ footer
 	margin:0px;
 }
 
-
-.produit
+.produitAvecEtiquette img
 {
-	margin-left: 0px;
+	margin:auto;
 }
+
+.figureADroite, .figureAGauche .produitAvecEtiquette
+{
+	float:none;
+	margin:auto;
+}
+.figureADroite .produitAvecEtiquette, .figureAGauche .produitAvecEtiquette
+{
+	width: 100%;
+	float:none;
+	margin:auto;
+}
+
+
+
+figure p
+{
+	padding-top: 0px;
+}
+#aleWinter, #americanAle, #vinJadis, #harpLager, #shiraz, #deutz, #img-verreAle, #beerLager, #beerLager,
+#spiritueux, #champagne, #vintageAle, #paleAle, #bordeaux, #unnamed, #hediard, #bonnet, #Dehu, #vinBuzet,
+#yuengling, #tennet, #stella, #cornish, #corona, #LeavenWorth, #Michelob, #Viru,
+#brooklyn, #budweiser, #hamstel, #landshark, #miller, #peroni
+{
+	display:block;
+	float:none;
+	width: 100%;
+	margin: auto;
+	max-width: 300px;
+}
+
+.produit figure
+{
+	margin:0px;
+}
+
 .sectionTarget
 {
 	display: flex;
-	margin-left: 0px;
-	flex-direction: column;
+	flex-wrap:wrap;
+	align-items: center;
+    justify-content: center;
 }
 
-}
+}/*fin media 630px*/
 
 
 @media only screen and (min-width: 35em) {
@@ -497,13 +711,6 @@ footer
         text-decoration: underline;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
 
     /*
      * Don't show links that are fragment identifiers,

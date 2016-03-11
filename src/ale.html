@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>ale</title>
+		<title>Ale</title>
 		<meta name="description" content="">
 		<meta name="author" content="Michael Vincent">
 
@@ -17,7 +17,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body class="withbackground">
 		<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -26,23 +26,22 @@
 		<header>
 			<div id="containerHeader" class= "wrapper">
 				<div id="elem1Header" class="elemHeader">
-					<a href="index.html"><img src="img/beer-549300_640.png" alt="Le logo de l'entreprise" height="150px" /></a>
+					<a href="index.html"><img id="logo" src="img/logo.png" alt="Le logo de l'entreprise"/></a>
 				</div>
 				<div id="elem2Header" class="elemHeader" >
+
 					<ul id="nav">
 						<li>
-							<a target="idFrame" href="directeur.html">Directeur</a>
+							<a href="contact.html"><div>Contact</div></a>
 						</li>
 						<li>
-							<a href="contact.html">Contact</a>
+							<a href="bottin.html"><div>Bottin</div></a>
 						</li>
 						<li>
-							<a href="bottin.html">Bottin</a>
-						</li>
-						<li>
-							<a href="connexion.html">Connexion</a>
+							<a href="connexion.html"><div>Connexion</div></a>
 						</li>
 					</ul>
+
 				</div>
 			</div>
 		</header>
@@ -51,122 +50,191 @@
 			<div class="mainInformation">
 				<nav id= "menuVertical">
 					<li>
-						<a target="idFrame" href="phare1.html">1er produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare2.html">2e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare3.html">3e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare4.html">4e produit phare</a>
-					</li>
-					<li>
-						<a target="idFrame" href="phare5.html">5e produit phare</a>
-					</li>
-					<hr />
-					<li>
-						<a href="ale.html">Ale</a>
-					</li>
-					<li>
-						<a href="lager.html">Lager</a>
-					</li>
-					<li>
-						<a href="vin.html">Vin</a>
-					</li>
-					<li>
-						<a href="champagne.html">Champagne</a>
-					</li>
-					<li>
-						<a href="spiritueux.html">Spiritueux</a>
-					</li>
+							<a href="ale.html"><div>Ale</div></a>
+						</li>
+						<li>
+							<a href="lager.html"><div>Lager</div></a>
+						</li>
+						<li>
+							<a href="vin.html"><div>Vin</div></a>
+						</li>
+						<li>
+							<a href="champagne.html"><div>Champagne</div></a>
+						</li>
+						<li>
+							<a href="spiritueux.html"><div>Spiritueux</div></a>
+						</li>
 				</nav>
 				<div class="informationDisposition">
-
-					<div class="sectionTarget">
-						<a target="_self" href="#produitAle1">produit 1</a>
-						<a target="_self" href="#produitAle2">produit 2</a>
-						<a target="_self" href="#produitAle3">produit 3</a>
-						<a target="_self" href="#produitAle4">produit 4</a>
-						<a target="_self" href="#produitAle5">produit 5</a>
-						<a target="_self" href="#produitAle6">produit 6</a>
-						<a target="_self" href="#produitAle7">produit 7</a>
-						<a target="_self" href="#produitAle8">produit 8</a>
-						<a target="_self" href="#produitAle9">produit 9</a>
-						<a target="_self" href="#produitAle10">produit 10</a>
-						<a target="_self" href="#produitAle11">produit 11</a>
-						<a target="_self" href="#produitAle12">produit 12</a>
-						<a target="_self" href="#produitAle13">produit 13</a>
-						<a target="_self" href="#produitAle14">produit 14</a>
-						<a target="_self" href="#produitAle15">produit 15</a>
-					</div>
-
-					<section id="produitAle1" class="produit">
+					<section id="allsection" class="sectionTarget">
+						<a target="_self" href="#produit1"><div>produit 1</div></a>
+						<a target="_self" href="#produit2"><div>produit 2</div></a>
+						<a target="_self" href="#produit3"><div>produit 3</div></a>
+						<a target="_self" href="#produit4"><div>produit 4</div></a>
+						<a target="_self" href="#produit5"><div>produit 5</div></a>
+						<a target="_self" href="#produit6"><div>produit 6</div></a>
+						<a target="_self" href="#produit7"><div>produit 7</div></a>
+						<a target="_self" href="#produit8"><div>produit 8</div></a>
+						<a target="_self" href="#produit9"><div>produit 9</div></a>
+						<a target="_self" href="#produit10"><div>produit 10</div></a>
+						<a target="_self" href="#produit11"><div>produit 11</div></a>
+						<a target="_self" href="#produit12"><div>produit 12</div></a>
+						<a target="_self" href="#produit13"><div>produit 13</div></a>
+						<a target="_self" href="#produit14"><div>produit 14</div></a>
+						<a target="_self" href="#produit15"><div>produit 15</div></a>
+					</section>
+					<section id="produit1" class="produit">
 						<h2>produit 1</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
-							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
-							Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
-							facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
-							luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
-							condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
-							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
-							velit, nec fermentum tortor sollicitudin eget.
-						</p>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
+						<figure class="clearFix figureADroite coinArrondie">
+							<img id="aleWinter" src="img/ale/Bottle_Winter-Ale.png" alt="bottle_winter" />
+							<figcaption>
+								Bottle winter
+							</figcaption>
+							<p>
+								ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
+								In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
+								Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
+								facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
+								luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
+								condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
+								vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
+								velit, nec fermentum tortor sollicitudin eget.
+							</p>
+						</figure>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
+
 					</section>
-					<section id="produitAle2" class="produit">
+					<section id="produit2" class="produit">
 						<h2>produit 2</h2>
-						<p>
-							Ut et diam bibendum, eleifend lectus feugiat, elementum tortor. Etiam hendrerit elementum sollicitudin. Aliquam at rhoncus est,
-							a euismod lorem. Fusce nibh nibh, auctor a egestas ac, facilisis at urna. Donec hendrerit id elit eu volutpat. Suspendisse faucibus
-							neque in viverra hendrerit. Aenean interdum nibh sapien, quis aliquam ex pharetra vitae. Vestibulum vel blandit arcu, at sagittis augue.
-							Duis vestibulum, diam at accumsan interdum, enim nunc pharetra sem, id volutpat turpis quam vitae lectus. Mauris velit sapien, mollis
-							aliquam dictum nec, tincidunt et nisl. Phasellus vitae nulla euismod, ornare leo sed, fringilla tellus. Maecenas sagittis lorem a
-							massa porta rutrum. Ut tristique efficitur augue id posuere. Pellentesque lacinia hendrerit nibh non finibus.
-						</p>
+						<header>
+							<p>
+								fabrique par un vieil homme
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
+						<figure class="clearFix figureADroite coinArrondie">
+							<img id="vintageAle" src="img/ale/Vintage_Ale_2013_x_500ml_Single_Bottle.jpg" alt="Vintage_Ale" />
+							<figcaption>
+								Vintage Ale
+							</figcaption>
+							<p>
+								Ut et diam bibendum, eleifend lectus feugiat, elementum tortor. Etiam hendrerit elementum sollicitudin. Aliquam at rhoncus est,
+								a euismod lorem. Fusce nibh nibh, auctor a egestas ac, facilisis at urna. Donec hendrerit id elit eu volutpat. Suspendisse faucibus
+								neque in viverra hendrerit. Aenean interdum nibh sapien, quis aliquam ex pharetra vitae. Vestibulum vel blandit arcu, at sagittis augue.
+								Duis vestibulum, diam at accumsan interdum, enim nunc pharetra sem, id volutpat turpis quam vitae lectus. Mauris velit sapien, mollis
+								aliquam dictum nec, tincidunt et nisl. Phasellus vitae nulla euismod, ornare leo sed, fringilla tellus. Maecenas sagittis lorem a
+								massa porta rutrum. Ut tristique efficitur augue id posuere. Pellentesque lacinia hendrerit nibh non finibus.
+							</p>
+						</figure>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle3" class="produit">
+					<section id="produit3" class="produit">
 						<h2>produit 3</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
-							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
-							Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
-							facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
-							luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
-							condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
-							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
-							velit, nec fermentum tortor sollicitudin eget.
-						</p>
+						<header>
+							<p>
+								fabrique par un americain
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
+						<figure class="clearFix figureAGauche coinArrondie">
+							<img id="americanAle" src="img/ale/american ale.jpg" alt="american_bottle" />
+							<figcaption>
+								American Ale
+							</figcaption>
+							<p>
+								ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
+								In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
+								Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
+								facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
+								luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
+								condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
+								vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
+								velit, nec fermentum tortor sollicitudin eget.
+							</p>
+						</figure>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle4" class="produit">
+					<section id="produit4" class="produit">
 						<h2>produit 4</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
-							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
-							Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
-							facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
-							luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
-							condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
-							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
-							velit, nec fermentum tortor sollicitudin eget.
-						</p>
+						<header>
+							<p>
+								fabrique par un homme pale
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
+						<figure class="clearFix figureADroite coinArrondie">
+							<img id="paleAle" src="img/ale/beers-pale-ale-primary-image1.png" alt="pale_bottle" />
+							<figcaption>
+								Pale Ale
+							</figcaption>
+							<p>
+								ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
+								In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
+								Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
+								facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
+								luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
+								condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
+								vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
+								velit, nec fermentum tortor sollicitudin eget.
+							</p>
+						</figure>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle5" class="produit">
+					<section id="produit5" class="produit">
 						<h2>produit 5</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
-							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
-							Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
-							facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
-							luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
-							condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
-							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
-							velit, nec fermentum tortor sollicitudin eget.
-						</p>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
+						<figure class="clearFix figureAGauche coinArrondie">
+							<img id="brew" src="img/ale/brews_abby_ale.jpg" alt="brew" />
+							<figcaption>
+								Brews Abby
+							</figcaption>
+							<p>
+								ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
+								In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
+								Phasellus in pulvinar nulla. Integer suscipit elit at augue placerat, vel fermentum diam blandit. Phasellus quis ante sit amet lorem
+								facilisis mattis ac ac erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
+								luctus et ultrices posuere cubilia Curae; Suspendisse ornare nisi hendrerit diam tincidunt suscipit. Quisque est felis, faucibus at
+								condimentum ac, rutrum in mauris. Maecenas imperdiet urna nulla, ut euismod massa ultrices eu. Nam massa quam, tempor sit amet
+								vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
+								velit, nec fermentum tortor sollicitudin eget.
+							</p>
+						</figure>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle6" class="produit">
+					<section id="produit6" class="produit">
 						<h2>produit 6</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -177,9 +245,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle7" class="produit">
+					<section id="produit7" class="produit">
 						<h2>produit 7</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -190,9 +268,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle8" class="produit">
+					<section id="produit8" class="produit">
 						<h2>produit 8</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -203,9 +291,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle9" class="produit">
+					<section id="produit9" class="produit">
 						<h2>produit 9</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -217,8 +315,18 @@
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
 					</section>
-					<section id="produitAle10" class="produit">
+					<footer class="underImage">
+						<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+					</footer>
+					<section id="produit10" class="produit">
 						<h2>produit 10</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -229,9 +337,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle11" class="produit">
+					<section id="produit11" class="produit">
 						<h2>produit 11</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -242,9 +360,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle12" class="produit">
+					<section id="produit12" class="produit">
 						<h2>produit 12</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -255,9 +383,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle13" class="produit">
+					<section id="produit13" class="produit">
 						<h2>produit 13</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -268,9 +406,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle14" class="produit">
+					<section id="produit14" class="produit">
 						<h2>produit 14</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -281,9 +429,19 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
-					<section id="produitAle15" class="produit">
+					<section id="produit15" class="produit">
 						<h2>produit 15</h2>
+						<header>
+							<p>
+								fabrique par le pere noel
+							</p>
+							<a href="#allsection">haut de la page</a>
+						</header>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat porttitor augue, ut euismod augue suscipit quis.
 							In lacinia maximus ante vitae interdum. Vestibulum quis tincidunt ligula. Pellentesque volutpat ut nisi non ullamcorper.
@@ -294,14 +452,28 @@
 							vulputate at, tristique at eros. Mauris diam sapien, hendrerit id mattis non, ullamcorper vitae dui. Aliquam porttitor consequat
 							velit, nec fermentum tortor sollicitudin eget.
 						</p>
+						<footer class="underImage">
+							<p class="prix">Prix: 1.00$</p>
+							<a href="#piedDePage">bas de la page</a>
+						</footer>
 					</section>
 				</div>
 			</div>
 		</div>
 
-		<footer>
+		<footer id="piedDePage" class="clearfix">
 			<p>
-				&copy; Copyright  by Michael Vincent
+				developpé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigleINF2005/">INF2005</a> de l'<a href="http://www.uqam.ca/">UQAM</a>
+			</p>
+			<p>
+				Par Michael Vincent
+				<br />
+				<a href="mailto:example@xyz.org">Courriel pour me contacter</a>
+			</p>
+			<p id="cssValidator">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer"> <img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="CSS Valide !" /> </a>
 			</p>
 		</footer>
 	</body>
